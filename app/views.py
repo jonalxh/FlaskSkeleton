@@ -13,5 +13,5 @@ def index():
 
 @app.route('/info', methods= ['POST','GET'])
 def info():
-	return {"status":"ok", "data":{"name":"app", "version": "0.0.1"}}
+	return jsonify({"status":"ok", "data":{"name":"app", "version": "0.0.1"}})
 
